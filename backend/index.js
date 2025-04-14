@@ -6,6 +6,7 @@ import geminiRoutes from "./routes/geminiRoutes.js"
 const app = express();
 dotenv.config();
 app.use(cors());
+job.start(); 
 app.use(express.json());
 app.use("/gemini/api", geminiRoutes);
 
